@@ -1,0 +1,49 @@
+@import '../../styles/common.scss';
+.rule-page{
+	position: relative;
+	height: 100%;
+	@extend .flex-box;
+	@extend .flex-column;
+	.wapper {
+		@extend .flex;
+		height: 100%;
+		overflow: hidden;
+		background: linear-gradient(to bottom, #14023E, #5C0881);
+		min-height: 100vh;
+		color: #fff;
+		.main {
+			height: 100%;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 640px;
+			padding-bottom: 12%;
+			padding-top: 6%;
+		}
+	}
+	
+	
+	.text-wrapper {
+		width: 100%;
+		padding: 0 10px;
+		overflow: hidden;
+		margin: 0 auto;
+		display: block;
+		line-height: 26px;  
+		font-size: 14px;
+		li{
+			width: 100%;
+			overflow-x: auto;
+		}
+	}
+	
+	h3 {
+		border: 1px solid #5B2578;
+		line-height: 28px;
+		padding: 2% 8%;
+		font-size: 14px;
+		color: #666;
+		margin: 6% 0;
+	}
+}

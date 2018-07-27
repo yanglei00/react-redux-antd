@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  position: absolute;
+  top:0;
+  z-index: 10;
+  .nav-bar {
+    text-align: center;
+  }
+  .am-navbar{
+    background-color: unset;
+    .am-navbar-left{
+      .am-navbar-left-icon{
+        img{
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .am-navbar-title{
+      color: #fff;
+    }
+    .am-navbar-right{
+      img{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+.notPosition{
+  position: unset;
+  .am-navbar{
+    background-color: #fff;
+    color: #333;
+    .am-navbar-title{
+      color: #333;
+    }
+    .am-navbar-right{
+      font-size: 16px;
+      color: #999999;
+    }
+  }
+}

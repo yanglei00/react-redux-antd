@@ -1,0 +1,23 @@
+@import '../../styles/common.scss';
+
+.am-am-list-listView{
+  @extend .flex-box;
+  @extend .flex-column;
+  .am-list-header{
+    padding: 0;
+  }
+  .am-list-body{
+    @extend .flex;
+    height: 100%;
+    .list-view-section-body{
+      height: 100%;
+      overflow: auto;
+    }
+    &::before{
+      height: 0!important;
+    }
+    &::after{
+      height: 0!important;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '../../styles/common.scss';
+.h10{
+  height: 10px;
+  background: #EDEDED;
+}
+
+.camTask-Page .camTask-content{
+  overflow: auto;
+  background: #F2F2F2;
+  .alreadyUpload{
+      height:1rem;
+      width:100%;
+      padding:0 23px;
+      line-height:1rem;
+      @extend .flex-box;
+      @extend .flex-center;
+      img{
+          width:18px;height:18px;margin-right:10px;
+      }
+      p{
+        font-size: 14px;
+        color: #333333;
+      }
+  }
+  .content{
+      width:100%;
+      background:#fff;
+      padding:12px 24px 20px 24px;
+      h2{
+        font-size: 14px;
+        color: #333333;
+        padding-bottom:9px;
+      }
+      p{
+        font-size: 12px;
+        line-height:20px;
+        color: #666666;
+        padding-bottom:9px;
+        border-bottom:1px solid #F2F2F2;
+      }
+  }
+  .content-but{
+    width:100%;
+    background:#fff;
+    padding:16px 0;
+    .but1,.but2{
+        width:6.9rem;
+        border-radius: 100px;  
+        height:0.9rem;
+        line-height:0.9rem;
+        text-align:center; 
+        font-size: 17px;
+        margin:0 auto 16px;
+    }
+    .but1{
+      background: #FF6026;
+      color: #FFFFFF;
+    }
+    .but2{
+      border: 1px solid #FF6026;
+      color:#FF6026;
+    }
+  }
+
+}
+.gotoapp{
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.8;
+  position: absolute;
+  top:0;
+  left:0;
+  @extend .flex-box;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  
+  .but1{
+    display:block;
+    width:6.9rem;
+    border-radius: 100px;  
+    height:0.9rem;
+    line-height:0.9rem;
+    text-align:center; 
+    font-size: 17px;
+    margin:0 auto 16px;
+    background: #FF6026;
+    color: #FFFFFF;
+}
+}
+.gotopage{
+  color:#fff;
+  img{
+    position:absolute;
+    right:20%;
+    top:100px;;
+  }
+}

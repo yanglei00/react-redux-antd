@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="318px" height="52px" viewBox="0 0 318 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>biaoti@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-107.9%" y="-5000.0%" width="315.8%" height="10100.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="50 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-95.5%" y="-5000.0%" width="291.1%" height="10100.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="50 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-85.2%" y="-5000.0%" width="270.5%" height="10100.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="50 0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="126.223958%" id="linearGradient-4">
+            <stop stop-color="#FDE543" offset="0%"></stop>
+            <stop stop-color="#F27A36" offset="66.2574789%"></stop>
+            <stop stop-color="#FBB929" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-5">
+            <stop stop-color="#D6A111" offset="0%"></stop>
+            <stop stop-color="#96520C" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-6" points="12.5797101 5 111.42029 5 118.833333 19 111.42029 33 12.5797101 33 5.16666667 19"></polygon>
+        <filter x="-4.8%" y="-16.1%" width="109.7%" height="139.3%" filterUnits="objectBoundingBox" id="filter-7">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="1" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.290449502 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="biaoti" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle-2" x="0" y="0" width="318" height="52"></rect>
+            <g id="Group-6" transform="translate(72.000000, 17.000000)" fill="#173BF8" opacity="0.300000012">
+                <rect id="Rectangle-9" filter="url(#filter-1)" x="18" y="0" width="139" height="3" rx="1.5"></rect>
+                <rect id="Rectangle-9" filter="url(#filter-2)" x="11" y="10" width="157" height="3" rx="1.5"></rect>
+                <rect id="Rectangle-9" filter="url(#filter-3)" x="0" y="20" width="176" height="3" rx="1.5"></rect>
+            </g>
+            <g id="大赛介绍" transform="translate(97.000000, 9.000000)">
+                <g id="List-im/tp">
+                    <rect id="Rectangle-3" x="0" y="0" width="124" height="38"></rect>
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                        <path stroke="url(#linearGradient-5)" stroke-width="2" d="M11.9776773,4 L112.022323,4 L119.964869,19 L112.022323,34 L11.9776773,34 L4.03513075,19 L11.9776773,4 Z" fill="url(#linearGradient-4)" fill-rule="evenodd"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

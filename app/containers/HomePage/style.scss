@@ -1,0 +1,567 @@
+@import '../../styles/common.scss';
+.home-page{
+    height: 100%;
+    @extend .flex-box;
+    @extend .flex-column;
+    .header{
+
+    }
+    .wrapper {
+        @extend .flex;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .main {
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling:touch;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 640px;
+        background: -webkit-linear-gradient(to right, #370259, #11002C);
+        background: linear-gradient(to right, #370259, #11002C);
+        padding-bottom: 1rem;
+    }
+    
+    .line {
+        margin-top: 4%;
+    }
+    
+    .banner-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #000;
+        text-indent: -9999px;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    
+    .text-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        color: #fff;
+        position: relative;
+    
+        img {
+            display: block;
+            width: 95%;
+            margin: 0 auto;
+        }
+    
+        p {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            -moz-transform: translate3d(-50%, -50%, 0);
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            width: 76%;
+            text-indent: 2em;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .wrapper-container {
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            -moz-transform: translate3d(-50%, -50%, 0);
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            width: 76%;
+        }
+        .last-container {
+            position: absolute;
+            top: 58%;
+            left: 50%;
+            -moz-transform: translate3d(-50%, -50%, 0);
+            -webkit-transform: translate3d(-50%, -50%, 0);
+            transform: translate3d(-50%, -50%, 0);
+            width: 76%;
+        }
+        .color-font {
+            color: #ECD58E;
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 2%;
+        }
+        .subItem{
+            margin-bottom: 6%;
+            line-height: 20px;
+        }
+        .nextItem {
+            line-height: 19px;
+        }
+        .dot {
+            float: left;
+            height: 6px;
+            width: 6px;
+            background-color: #ECD58E;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            margin: 2% 3% 0 0;
+        }
+        .doot {
+            float: left;
+            height: 6px;
+            width: 6px;
+            -moz-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            margin: 2% 3% 0 0;
+        }
+        .boldFont{
+            font-size: 16px;
+            color: #ECD58E;
+        }
+        .companyItem{
+            width: 100%;
+            overflow: hidden;
+            span {
+                float: left;
+                width: 26%;
+            }
+            .special {
+                width: 34%;
+            }
+            b {
+                float: left;
+                width: 66%;
+                font-weight: normal;
+            }
+        }
+    }
+    
+    .sectionone{
+        background: #000;
+        display: block;
+        width: 100%;
+    
+        .bg-wrapper {
+            width: 96%;
+            margin: 0 auto;
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/center.png") center center no-repeat;
+            background-size: 98%;
+            min-height: 68vh;
+        }
+    
+    
+        .four-item {
+            display: block;
+            overflow: hidden;
+            width: 96%;
+            margin: 0 auto;
+        }
+    
+        .item-one {
+            float: left;
+            width: 50%;
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/baby.png") center center no-repeat;
+            background-size: 92%;
+            height: 30vh;
+            position: relative;
+            .avatar {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -moz-transform: translate3d(-50%, -50%, 0);
+                -webkit-transform: translate3d(-50%, -50%, 0);
+                transform: translate3d(-50%, -50%, 0);
+                width: 46%;
+                border: 3px solid #333;
+                border-radius: 1000px;
+                text-indent: -9999px;
+                
+                overflow: hidden;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            span {
+                position: absolute;
+                top: 14%;
+                left: 11%;
+                color: #FDE543;
+                font-size: 18px;
+            }
+        }
+    
+        .bottom-wrapper {
+            display: block;
+            overflow: hidden;
+            width: 94%;
+            margin: 4% auto 0;
+            .partLeft {
+                float: left;
+                overflow: hidden;
+                .photos {
+                    float: left;
+                    overflow: hidden;
+                    padding-right: 5px;
+                    img {
+                        float: left;
+                        height: 22px;
+                        width: 22px;
+                        border-radius: 50px;
+                        margin-right: -3px;
+                    }
+                }
+    
+                p {
+                    float: left;
+                    margin-left: 10px;
+                    line-height: 22px;
+                    color: #fff;
+                }
+            }
+    
+            .rules {
+                float: right;
+                width: 20%;
+                height: 3vh;
+                background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/activity.png") center center no-repeat;
+                background-size: 98%;
+                text-indent: -9999px;
+            }
+        }
+    }
+    
+    .footerStyle {
+        background-color: purple;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        width: 100%;
+        text-indent: -9999px;
+        max-width: 640px;
+        -moz-transform: translate3d(-50%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        .footer-left{
+            width: 250px;
+            height: 48px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .footer-right{
+            width: 100px;
+            height: 48px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    
+    .imgStyle {
+        display: block;
+        width: 100%;
+    }
+    
+    .hero-container {
+        background: #000;
+    
+        
+        .hero-wrapper {
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/hero.png") center center no-repeat;
+            background-size: 98%;
+            width: 96%;
+            margin: 0 auto;
+            height: 33.8vh;
+            position: relative;
+        }
+    
+        .content {
+            position: absolute;
+            top: 6%;
+            left: 50%;
+            -moz-transform: translate3d(-50%, 0, 0);
+            -webkit-transform: translate3d(-50%, 0, 0);
+            transform: translate3d(-50%, 0, 0);
+            text-align: center;
+            color: #fff;
+        }
+    
+        p {
+            font-size: 14px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+    
+        span {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 4px 0;
+        }
+    
+        .avatar {
+            display: inline-block;
+            margin-top: 13%;
+            width: 41%;
+            border: 3px solid #ddd;
+            border-radius: 1000px;
+            text-indent: -9999px;
+            
+            overflow: hidden;
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    
+        .count {
+            display: inline-block;
+            width: 70%;
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/tag.png") center center no-repeat;
+            background-size: cover;
+            margin-top: 2%;
+            height: 21px;
+            line-height: 21px;
+        }
+    
+        .rules {
+            position: absolute;
+            bottom: 4%;
+            right: 6%;
+            width: 15%;
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/activity.png") center center no-repeat;
+            background-size: cover;
+            text-indent: -9999px;
+        }
+    
+        .leftPart {
+            position: absolute;
+            bottom: 4%;
+            left: 6%;
+            color: #fff;
+        }
+    
+        .photos {
+            float: left;
+            overflow: hidden;
+            padding-right: 5px;
+            img {
+                float: left;
+                height: 22px;
+                width: 22px;
+                border-radius: 50px;
+                margin-right: -3px;
+            }
+        }
+    
+        .people {
+            float: left;
+            margin-left: 10px;
+            line-height: 22px;
+            color: #fff;
+        }
+    
+        .rank {
+            position: absolute;
+            top: 7%;
+            right: 2.5%;
+            width: 21%;
+            background: url("../../images/left.png") center center no-repeat;
+            background-size: 99%;
+            text-indent: 20px;
+            color: #fff;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+
+    .loading-wrapper {
+        
+    }
+    .see-other{
+        width: 94%;
+        margin: 0 auto;    
+        height: 40px;
+        line-height: 40px;
+        @extend .flex-box;
+        background: #5f0883;
+        padding: 0 15px;
+        border-radius: 2px;
+        .see-other-left{
+            display: block;
+            @extend .flex;
+            font-size: 14px;
+            color: #fff;
+        }
+        .see-other-right{
+            display: block;
+            color: #fff;
+            margin-top: 6px;
+            img{
+                display: block;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    /* index page, gradient color, by liuz */
+    .h2 {
+      background: url(../../images/biaoti@2x.svg) center center no-repeat;
+      background-size: auto 1.2rem;
+      color: #FFF;
+      font-size: .36rem;
+      font-weight: 900;
+      height: 1.28rem;
+      line-height: 1.28rem;
+      text-align: center;
+    }
+    .d0::after {
+      content: '';
+      clear: both;
+      display: block;
+      height: .32rem;
+    }
+    .d1 {
+      background-image: -webkit-linear-gradient(-180deg, #0AD3EF 0%, #FF5E9C 39%, #FEEAA5 100%);
+      background-image: linear-gradient(-180deg, #0AD3EF 0%, #FF5E9C 39%, #FEEAA5 100%);
+      border-radius: 6px;
+      height: 228px;
+      margin-left: .2rem;
+      width: 6.54rem;
+    }
+    .d1-long {
+      height: 340px;
+    }
+    .d2 {
+      background-image: -webkit-linear-gradient(-180deg, #072671 0%, #7F0C7C 100%);
+      background-image: linear-gradient(-180deg, #072671 0%, #7F0C7C 100%);
+      border-radius: 6px;
+      float: left;
+      min-height: -webkit-calc(100% + 10px);
+      min-height: calc(100% + 10px);
+      margin: 3px 0 0 3px;
+      padding-bottom: .32rem;
+      width: 7.04rem;
+    }
+    .d3 {
+      background-image: -webkit-linear-gradient(-180deg, #0AD3EF 0%, #FF5E9C 39%, #FEEAA5 100%);
+      background-image: linear-gradient(-180deg, #0AD3EF 0%, #FF5E9C 39%, #FEEAA5 100%);
+      border-radius: 6px;
+      margin: 0 auto;
+      padding: 1px 0;
+      width: 6.36rem;
+    }
+    .d4 {
+      background-image: -webkit-linear-gradient(-180deg, #820D7D 0%, #450175 100%);
+      background-image: linear-gradient(-180deg, #820D7D 0%, #450175 100%);
+      border-radius: 6px;
+      color: #FFF;
+      font-size: .24rem;
+      line-height: 1.5;
+      margin-left: 1px;
+      padding: .24rem;
+      text-align: justify;
+      width: -webkit-calc(100% - 2px);
+      width: calc(100% - 2px);
+    
+      ul {
+        padding-left: .25rem;
+      }
+      li {
+        position: relative;
+    
+        span {
+          color: #ECD58E;
+          font-size: .28rem;
+        }
+      }
+      li::before {
+        content: '●';
+        color: #ECD58E;
+        left: -.25rem;
+        position: absolute;
+      }
+    }
+    .d-saicheng li:not(:last-child) {
+      margin-bottom: .2rem;
+    }
+    .container::after {
+      clear: both;
+      display: block;
+    }
+}
+
+@media screen and ( max-device-height: 480px){
+    .home-page .hero-container .count {
+        display: inline-block;
+        width: 68%;
+        background: url(http://cdn09.ehaier.com/shunguang/H5/www/img/competition/tag.png) center center no-repeat;
+        background-size: 96%;
+        margin-top: 2%;
+        height: 21px;
+        line-height: 21px;
+    }
+    .home-page .hero-container .rules {
+        position: absolute;
+        bottom: 4%;
+        right: 6%;
+        width: 20%;
+        background: url(http://cdn09.ehaier.com/shunguang/H5/www/img/competition/activity.png) center center no-repeat;
+        background-size: 98%;
+        text-indent: -9999px;
+    }
+    .home-page .hero-container span {
+        margin: 0;
+    }
+    .home-page .hero-container .content {
+        position: absolute;
+        top: 4%;
+        left: 50%;
+        -moz-transform: translate3d(-50%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media screen and ( min-device-height: 481px )  and (max-device-height: 568px){
+  .home-page .hero-container .count {
+      display: inline-block;
+      width: 68%;
+      background: url(http://cdn09.ehaier.com/shunguang/H5/www/img/competition/tag.png) center center no-repeat;
+      background-size: 96%;
+      margin-top: 2%;
+      height: 21px;
+      line-height: 21px;
+  }
+  .home-page .hero-container .rules {
+      position: absolute;
+      bottom: 4%;
+      right: 6%;
+      width: 20%;
+      background: url(http://cdn09.ehaier.com/shunguang/H5/www/img/competition/activity.png) center center no-repeat;
+      background-size: 98%;
+      text-indent: -9999px;
+  }
+  .home-page .hero-container span {
+      margin: 0;
+  }
+  .home-page .hero-container .content {
+      position: absolute;
+      top: 4%;
+      left: 50%;
+      -moz-transform: translate3d(-50%, 0, 0);
+      -webkit-transform: translate3d(-50%, 0, 0);
+      transform: translate3d(-50%, 0, 0);
+      text-align: center;
+      color: #fff;
+  }
+}

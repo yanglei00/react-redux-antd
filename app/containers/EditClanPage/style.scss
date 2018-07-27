@@ -1,0 +1,61 @@
+@import '../../styles/common.scss';
+
+.editClan-page {
+  height: 100%;
+  @extend .flex-box;
+  @extend .flex-column;
+
+  .editClan-content{
+    @extend .flex;
+    height: 100%;
+    .am-list{
+      .am-list-body{
+        .am-list-item{
+          .am-list-line{
+            .am-list-content{
+              font-size: 15px;
+              color: #999999;
+            }
+            .am-list-extra{
+              max-width: 180px;
+              -webkit-flex-basis: unset;
+              -ms-flex-preferred-size: unset;
+              flex-basis: unset;
+              .editClan-content-logo-wrapper{
+                position: relative;
+                img{
+                  display: block;
+                  width: 64px;
+                  height: 64px;
+                  border-radius: 50%;
+                  background: #E4E4E4;
+                }
+                input[type=file]{
+                  display: block;
+                  width: 100px;
+                  height: 64px;
+                  opacity: 0;
+                  position: absolute;
+                  top: 0;
+                  right: -25px;
+                }
+                .editClan-content-logo-empty{
+                  display: block;
+                  width: 100px;
+                  height: 64px;
+                  opacity: 0;
+                  position: absolute;
+                  top: 0;
+                  right: -25px;
+                }
+              }
+            }
+          }
+        }
+        .editClan-content-logo{
+          height: 92px;
+        }
+      }
+    }
+  }
+}

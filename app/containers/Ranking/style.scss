@@ -1,0 +1,215 @@
+@import '../../styles/common.scss';
+.ranking-page{
+    height: 100%;
+    @extend .flex-box;
+    @extend .flex-column;
+    .header{
+        .am-navbar{
+            background: #14023E;
+            .am-navbar-title{
+               color: #fff; 
+            }
+        }
+    }
+    .wapper {
+        @extend .flex;
+        height: 100%;
+        overflow: hidden;
+        background: linear-gradient(to bottom, #14023E, #5C0881);
+    }
+    
+    .main {
+        height: 100%;
+        overflow: auto;
+        -webkit-overflow-scrolling:touch;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 640px;
+        padding-bottom: 12%;
+        min-height: 100vh;
+        .container{
+            height: 100%;
+            padding-top: 0;
+            .tabs{
+                height: 100%;  
+                @extend .flex-box;
+                @extend .flex-column;
+                .tab-content{
+                    height: 100%;
+                    @extend .flex;
+                    overflow: hidden;
+                    .list-wrapper{
+                        height: 100%;
+                        overflow: auto;
+                        -webkit-overflow-scrolling: touch;
+                    }
+                }
+            }
+        }
+    }
+    
+    .line {
+        margin-top: 4%;
+    }
+    
+    .container {
+        padding-top: 10%;
+    }
+    
+    .tab-list {
+        padding-left: 0;
+        overflow: hidden;
+    }
+    
+    .tab-list-item {
+        float: left;
+        list-style: none;
+        width: 33.3%;
+        color: #ccc;
+        text-align: center;
+        font-size: 16px;
+        line-height: 32px;
+        margin: 2% 0;
+        padding: 2% 0;
+    }
+    
+    .tab-list-active {
+        color: #fff;
+        border: solid #ccc;
+        border-width: 0px 0px 2px 0px;
+    }
+    .item-wrapper{
+        width: 100%;
+        padding: 5px 10px;
+    }
+    .itemone {
+        width: 100%;
+        height: 100px;
+        color: #fff;
+        background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/competition/itembg.png") center center no-repeat;
+        background-size: 100% 100%;
+        @extend .flex-box;
+        .num {
+            // margin: 0 6% 0 10%;
+            width: 50px;
+            height: 100%;
+            line-height: 100px;
+            text-align: center;
+        }
+    
+        .avatar {
+            width: 80px;
+            height: 100%;
+            @extend .flex-box;
+            @extend .flex-center;
+            @extend .flex-mid;
+            img {
+                display: block;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+            }
+        }
+    
+        .detail {
+            width: 100%;
+            @extend .flex;
+            @extend .flex-box;
+            @extend .flex-column;
+            @extend .flex-mid;
+            padding-left: 15px;
+            p{
+                width: 100%;
+            }
+        }
+    
+        .teamname {
+            font-size: 17px;
+            line-height: 24px;
+            margin-bottom: 7px;
+        }
+    
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    .first {
+        .avatar {
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/race/babyfirst.png") center 5px no-repeat;
+            background-size: 78px 78px;
+        }
+    }
+
+    .second {
+        .avatar {
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/race/babysecond.png") center 5px no-repeat;
+            background-size: 78px 78px;
+        }
+    }
+
+    .third {
+        .avatar {
+            background: url("http://cdn09.ehaier.com/shunguang/H5/www/img/race/baythird.png") center 5px no-repeat;
+            background-size: 78px 78px;
+           
+        }
+    }
+    
+    
+    
+    .footerStyle {
+        background-color: purple;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        position: fixed;
+        left: 50%;
+        bottom: 0;
+        width: 100%;
+        text-indent: -9999px;
+        max-width: 640px;
+        -moz-transform: translate3d(-50%, 0, 0);
+        -webkit-transform: translate3d(-50%, 0, 0);
+        transform: translate3d(-50%, 0, 0);
+    }
+    
+    .imgStyle {
+        display: block;
+        width: 100%;
+    }
+    .am-list-listView{
+        .am-list-header{
+            display: none;
+        }
+        .am-list-body{
+            background-color: unset!important;
+        }
+        .am-list-body::before, .am-list-body::after,{
+            display: none;
+        }
+        .am-list-footer{
+            display: block;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
