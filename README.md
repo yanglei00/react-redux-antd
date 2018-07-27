@@ -58,7 +58,7 @@ This boilerplate features all the latest tools and practices in the industry.
 - _Lint_ - ESlint
 - _Styles_ - SCSS Styling
 
-Here are a few highlights to look out for in this boilerplate 
+Here are a few highlights to look out for in this boilerplate
 
 <dl>
   <dt>Instant feedback</dt>
