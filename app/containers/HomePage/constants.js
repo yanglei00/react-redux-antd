@@ -8,10 +8,6 @@
  * Follow this format:
  * export const YOUR_ACTION_CONSTANT = 'yourproject/YourContainer/YOUR_ACTION_CONSTANT';
  */
-
-export const CHANGE_USERNAME = 'boilerplate/Home/CHANGE_USERNAME';
-
-// 投票
-export const VOTE_FETCH = 'COMPETITION/CLANLIST/VOTE_FETCH';
-export const VOTE_FETCH_SUCCESS = 'COMPETITION/CLANLIST/VOTE_FETCH_SUCCESS';
-
+// 战队信息
+export const INIT_FETCH = 'COMPETITION/CLANMIEN/INIT_FETCH';
+export const INIT_FETCH_SUCCESS = 'COMPETITION/CLANMIEN/INIT_FETCH_SUCCESS';

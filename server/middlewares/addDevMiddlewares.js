@@ -20,25 +20,13 @@ module.exports = function addDevMiddlewares(app, webpackConfig) {
 
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));
-  // http-proxy-middleware 反向代理 yl
 
+  // http-proxy-middleware 反向代理 yl
   app.use('/mockjsdata/*', proxy({
     target: 'http://rap.test.ehaier.com', // 目标服务器 host
     changeOrigin: true,               // 默认false，是否需要改变原始主机头为目标URL
   }))
-  app.use('/competition/*', proxy({
-    target: 'http://m.ehaier.com', // 目标服务器 host
-    changeOrigin: true,               // 默认false，是否需要改变原始主机头为目标URL
-  }))
-  app.use('/v3/*', proxy({
-    target: 'http://m.ehaier.com', // 目标服务器 host
-    changeOrigin: true,               // 默认false，是否需要改变原始主机头为目标URL
-  }))
-  app.use('/v5/*', proxy({
-    target: 'http://m.ehaier.com', // 目标服务器 host
-    changeOrigin: true,               // 默认false，是否需要改变原始主机头为目标URL
-  }))
-  
+
   // Since webpackDevMiddleware uses memory-fs internally to store build
   // artifacts, we use it instead
   const fs = middleware.fileSystem;

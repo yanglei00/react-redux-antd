@@ -46,20 +46,6 @@ export async function fetchService(url, settings, overtime, hiddenLoading = true
         }
     }, 300);
 
-
-    //  Bearer46ec8101-f7f5-4e36-a55c-0e52e5780812392#6AQ+53w+q+a9AeLKgxqTS+zU4Z4bE4ldNxBX3/fcmmWN6EWhyMglqquoVOofqDBC
-    // （18525369183/Aa123456）
-
-    //  Bearer3d886c8f-e3de-4aba-9130-c93622b66375338#LPgS5R4DAs5urvBWVXlXHuyXUChOCD+BUxyLxe1Y81nRmJT3Z45dQP6Qh0rELh1i 
-    // （15542649596/Aa123456）
-
-    // 第一个账号是非二十强战队队员账号。
-
-    // 第二个是二十强战队中其中一个队的队长的账号
-    // const userToken = await global.getItem('userToken'); 
-    // const userToken = 'Bearer3d886c8f-e3de-4aba-9130-c93622b66375338#LPgS5R4DAs5urvBWVXlXHuyXUChOCD+BUxyLxe1Y81nRmJT3Z45dQP6Qh0rELh1i'
-    // localStorage.setItem('sg_login_token_secret','Bearer5675bcdb-512e-4d55-b207-2eac701e441c220#IouQAgVp+zStVR8SWVdSbG26mvT6+U/1gr6K/zQ+HhCzElBqmojTbZj9B+98RHi1');
-
     const userToken = localStorage.getItem('race-token') || localStorage.getItem('sg_login_token_secret');
     const reqSetting = {
         ...settings,
@@ -180,7 +166,7 @@ export async function GET_P(url, query, setting, overtime, hiddenLoading, hidden
     }
     return resp;
 }
-// POST 通过 multipart/form-data 提交    
+// POST 通过 multipart/form-data 提交
 export async function POST_APP_FORM(url, body, query, settings = {headers: {}}, overtime, hiddenLoading)
 {
     let tmp = url;

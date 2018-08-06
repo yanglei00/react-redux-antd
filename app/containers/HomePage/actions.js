@@ -15,7 +15,7 @@
  *    }
  */
 
-import { CHANGE_USERNAME } from './constants';
+// import { CHANGE_USERNAME } from './constants';
 
 /**
  * Changes the input field of the form
@@ -24,9 +24,24 @@ import { CHANGE_USERNAME } from './constants';
  *
  * @return {object}    An action object with a type of CHANGE_USERNAME
  */
-export function changeUsername(name) {
-  return {
-    type: CHANGE_USERNAME,
-    name
-  };
+// export function changeUsername(name) {
+//   return {
+//     type: CHANGE_USERNAME,
+//     name
+//   };
+// }
+
+export function changeCount(count){
+    console.log(count)
+    return {
+        type: 'CLICK',
+        count
+
+    }
+}
+export function initFetch(initData){
+    return {
+        type: 'INITFETCH',
+        initData
+    }
 }

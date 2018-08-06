@@ -4,14 +4,14 @@
 
 import { createSelector } from 'reselect';
 
+
 const selectHome = (state) => state.get('home');
 
-const makeSelectUsername = () => createSelector(
+const makeSelectInitData= () => createSelector(
   selectHome,
-  (homeState) => homeState.get('username')
+  (state) => state.get('initData')
 );
 
 export {
-  selectHome,
-  makeSelectUsername,
+  makeSelectInitData,
 };

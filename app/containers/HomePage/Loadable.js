@@ -1,5 +1,5 @@
 /**
- * Asynchronously loads the component for HomePage
+ * Asynchronously loads the component for FeaturePage
  */
 import Loadable from 'react-loadable';
 
@@ -9,5 +9,4 @@ import LoadingIndicator from 'components/LoadingIndicator';
 //   loader: () => import('./index'),
 //   loading: LoadingIndicator,
 // });
-
 export {default} from './index';

@@ -91,7 +91,7 @@ const appRunFn = async()=>{
         //     localStorage.setItem('race-mid', rs.data.mid)
         //     localStorage.setItem('race-promotionCode', rs.data.promotionCode)
         //   })
-          
+
         // }
       if(commonFn.getUrlAttribute('mid')){
           localStorage.setItem('race-mid', commonFn.getUrlAttribute('mid'))
@@ -122,4 +122,3 @@ const appRunFn = async()=>{
 }
 
 appRunFn();
-
